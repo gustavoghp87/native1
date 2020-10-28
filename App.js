@@ -8,7 +8,7 @@ import { Icon } from 'native-base'
 import Axios from 'axios'
 //import { NavBar } from './Navbar'
 //import 'bootstrap/dist/css/bootstrap.min.css'
-
+import { config } from 'dotenv'; config()
 
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
 
   const traer = async () => {
     const axios = await Axios.post('https://maslabook.herokuapp.com/api/bot',        
-      {password:'maslabookaaaaaaaaaa1234567890'}
+      {password:process.env.PASSWORD}
     )
     const data = await axios.data
     //Alert.alert(data)

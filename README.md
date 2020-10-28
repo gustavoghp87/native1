@@ -2,4 +2,4 @@
 
 Simple React Native app testing Native-Base components, useState, useEffect, Axios requests and variables mapping
 
-It has a buttom that requests a tuit to Atlas DB through maslabook.herokuapp.com and shows it
+It has a button that requests a tuit to Atlas DB through maslabook.herokuapp.com and shows it
